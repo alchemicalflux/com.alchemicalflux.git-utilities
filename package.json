@@ -1,0 +1,14 @@
+{
+  "name": "com.alchemicalflux.git-utilities",
+  "version": "0.0.0-development",
+  "displayName": "AlchemicalFlux Git Utilities",
+  "description": "Unity package containing the folder and file structure for various git utilities",
+  "unity": "2021.3",
+  "dependencies": {},
+  "keywords": [],
+  "author": {
+    "name": "Jeremy Miller",
+    "email": "alchemicalflux@gmail.com",
+    "url": ""
+  }
+}
