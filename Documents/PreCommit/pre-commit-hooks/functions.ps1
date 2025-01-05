@@ -1,11 +1,11 @@
 #-------------------------------------------------------------------------------
-#  File:           functions.ps1 
-#  Project:        AlchemicalFlux Utilities
-#  Description:    Functions that help with pre-commit header processing.
-#  Copyright:      ©2023 AlchemicalFlux. All rights reserved.
+# File:         functions.ps1 
+# Project:      AlchemicalFlux Utilities
+# Overview:     Functions that help with pre-commit header processing.
+# Copyright:    2023-2025 AlchemicalFlux. All rights reserved.
 #
-#  Last commit by: alchemicalflux 
-#  Last commit at: 2023-10-27 00:39:40 
+# Last commit by: alchemicalflux 
+# Last commit at: 2025-01-05 10:31:14 
 #-------------------------------------------------------------------------------
 
 function Get-BashFiles {
@@ -17,7 +17,8 @@ function Get-BashFiles {
 
     foreach ($file in $stagedFiles) {
         $fullPath = Join-Path -Path (Get-Location) -ChildPath $file
-        # First we check if the file has an extension. If it doesn't, we assume it might be a bash file
+        # First we check if the file has an extension. 
+		# If it doesn't, we assume it might be a bash file
         if ([System.IO.Path]::GetExtension($fullPath) -eq '') {
             # Read the first line of the file
             $firstLine = Get-Content -Path $fullPath -First 1
