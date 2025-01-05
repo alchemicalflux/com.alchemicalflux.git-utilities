@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/alchemicalflux/com.alchemicalflux.git-utilities/compare/v1.0.0...v1.0.1) (2025-01-05)
+
+
+### Bug Fixes
+
+* Adjust precommit to align with 4 space tabs ([e8e511a](https://github.com/alchemicalflux/com.alchemicalflux.git-utilities/commit/e8e511aaeb7e27ab906e4f561f2f9ca9673f73c8))
+
 # 1.0.0 (2023-10-27)
 
 

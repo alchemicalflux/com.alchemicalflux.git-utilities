@@ -1,6 +1,6 @@
 {
   "name": "com.alchemicalflux.git-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "AlchemicalFlux Git Utilities",
   "description": "Unity package containing the folder and file structure for various git utilities",
   "unity": "2021.3",
