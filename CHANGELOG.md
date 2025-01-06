@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/alchemicalflux/com.alchemicalflux.git-utilities/compare/v1.0.1...v1.0.2) (2025-01-06)
+
+
+### Bug Fixes
+
+* Correct .cs spacing to 4 tab alignment ([5ef7ebf](https://github.com/alchemicalflux/com.alchemicalflux.git-utilities/commit/5ef7ebf54314b54799d4c2b81ceb9a13244045bc))
+
 ## [1.0.1](https://github.com/alchemicalflux/com.alchemicalflux.git-utilities/compare/v1.0.0...v1.0.1) (2025-01-05)
 
 
