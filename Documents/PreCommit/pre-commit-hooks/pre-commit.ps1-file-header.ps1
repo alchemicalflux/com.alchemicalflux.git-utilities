@@ -5,7 +5,7 @@
 # Copyright:    2023-2025 AlchemicalFlux. All rights reserved.
 # 
 # Last commit by: alchemicalflux 
-# Last commit at: 2025-01-05 10:31:14 
+# Last commit at: 2025-01-05 20:31:29 
 #-------------------------------------------------------------------------------
 
 # Requires -Version 3.0
@@ -26,14 +26,14 @@ $currentYear = Get-Date -Format "yyyy"
 $user = & git config user.name
 $date = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
-$filePrefix =       "File:         "
-$projectPrefix =    "Project:      "
-$overviewPrefix =   "Overview:     "
-$copyrightPrefix =  "Copyright:    "
-$userPrefix =       "Last commit by: "
-$datePrefix =       "Last commit at: "
+$filePrefix =      "File:         "
+$projectPrefix =   "Project:      "
+$overviewPrefix =  "Overview:     "
+$copyrightPrefix = "Copyright:    "
+$userPrefix =      "Last commit by: "
+$datePrefix =      "Last commit at: "
 
-$projectPostfix = "YourProjectName  # Replace with project name"
+$projectPostfix =  "YourProjectName  # Replace with project name"
 $overviewPostfix = "YourOverview  # Replace with overview"
 $copyrightPostfix = 
 	"YourName/YourCompany. All rights reserved.  # Replace with copyright"
@@ -49,19 +49,19 @@ foreach ($file in $stagedFiles) {
 	$content = Get-Content -Path $filePath -Raw
 
 	# Assign values with any modifications if necessary
-	$fileValue = "$fileName "
+	$fileValue =      "$fileName "
 	$copyrightValue = "$currentYear "
-	$userValue = "$user "
-	$dateValue = "$date "
+	$userValue =      "$user "
+	$dateValue =      "$date "
 
 	# Add the new header if it is missing
 	if (-not ($content -match "$headerStart")) {
-		$fileHeader =        "$filePrefix$fileValue"
-		$projectHeader =     "$projectPrefix$projectPostfix"
-		$overviewHeader = "$overviewPrefix$overviewPostfix"
-		$copyrightHeader =   "$copyrightPrefix$copyrightValue$copyrightPostfix"
-		$userHeader =        "$userPrefix$userValue"
-		$dateHeader =        "$datePrefix$dateValue"
+		$fileHeader =      "$filePrefix$fileValue"
+		$projectHeader =   "$projectPrefix$projectPostfix"
+		$overviewHeader =  "$overviewPrefix$overviewPostfix"
+		$copyrightHeader = "$copyrightPrefix$copyrightValue$copyrightPostfix"
+		$userHeader =      "$userPrefix$userValue"
+		$dateHeader =      "$datePrefix$dateValue"
 
 		$newHeader =
 @"
